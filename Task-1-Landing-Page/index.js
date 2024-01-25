@@ -6,7 +6,7 @@ window.addEventListener('scroll', function (event) {
     const scrollable = document.getElementById("back").scrollHeight - window.innerHeight;
     const scrolled = window.scrollY;
     console.log(scrolled)
-    ex = (scrolled / scrollable) * 100;
+    ex = (scrolled / scrollable) * 100; 
     if (ex >= 0 && ex <= 100) {
         if (ex >= 0 && ex < 40) {
             canvas.style.background = `radial-gradient(circle, rgba(5,174,241,1) ${ex}%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 80%)`
